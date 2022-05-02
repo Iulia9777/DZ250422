@@ -13,6 +13,7 @@
 @font-face {
     font-family: "Intro Regular";
     src: url("../fonts/intro_regular.woff") format("woff");
+    
     font-style: normal;
     font-weight: 400;
 }
@@ -34,6 +35,9 @@
     font-style: normal;
     font-weight: 800;
 }
+* {
+    box-sizing: border-box;
+}
 .container {
     margin: 0 auto;
     max-width: 1600px;
@@ -48,35 +52,48 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding: 21px 15px;
+    padding: 21px 26px;
     width: 100%;
+    margin: auto;
+    max-width: 1121px;
+    justify-content: space-between;
 }
 .logo {
     display: flex;
-    padding: 0 149px;
+    
 }
 .logo img {
     width: 184px;
 }
 .menu {
-    flex-grow: 1;
+    
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     
 }
 .menu__wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+.menu__wrapper-link {
+    margin: 0 18px;
+}
+.auth {
+    display: flex;
+    margin-left: 50px;
+}
+.auth__log-in-link {
+    margin: 0 0 0 6px;
+}
+.auth__icon {
+    font-size:14px;
 }
 a {
     text-decoration: none;
     color: #000000;
     font-family: "Proxima Nova Bold";
-}
-.auth {
-    display: flex;
-    justify-content: flex-end;
 }
 .main {
     box-sizing: border-box;
@@ -100,60 +117,4 @@ a {
 .main_karpachoff {
     max-width: 339px;
     max-height: 379px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 380px) {
-    .happy_wrapper {
-        padding: 40px 15px 340px
-    }
-
-    .happy_title {
-        font-size: 1.7em
-    }
-
-    .watch_wrapper {
-        padding-top: 30px
-    }
 }
