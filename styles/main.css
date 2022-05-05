@@ -1,83 +1,307 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>DZ250422</title>
-	<meta description="">
-	<meta name="keywords" content="">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-	<link href="./styles/main.css" rel="stylesheet">
-</head>
-<body>
-	<div class="container">
-		<div class="header">
-        	<div class="header__wrapper">
-            	<div class="logo">
-					<img srcset="./img/Karpachoff-logo.svg">
-				</div>
-            	<nav class="menu">
-                	<div class="menu__wrapper">
-                    	<a href="#main" class="menu__wrapper-link">Главная</a>
-                    	<a href="#materials" class="menu__wrapper-link">Материалы для вас</a>
-                    	<a href="#calendar" class="menu__wrapper-link">Календарь курсов</a>
-                	</div>
-					<div class="auth">
-						<div class="auth__icon"><i class="fa-solid fa-user"></i></i></div>
-						<div class="auth__log-in">
-							<a href="#login" class="auth__log-in-link">Войти</a>
-						</div>
-					</div>
-            	</nav>
-        	</div>
-    	</div>
-		<section class="main">
-			<div class="main-wrapper">
-				<div class="main-wrapper__content">
-					<div class="main-wrapper__content-title">
-						АКАДЕМИЯ РОДИТЕЛЬСКОГО МАСТЕРСТВА
-					</div>
-					<div class="main-wrapper__content-text">
-						ДМИТРИЯ КАРПАЧЕВА
-					</div>
-					<a class="button__main-wrapper__content" href="#"> Подробнее о курсе </a>
-					<div class="progress">
-						<div class="progress__bigRectangle">
-							<div class="progress__smallRectangle"></div>
-						</div>
-						<div class="topics">
-							<div class="topics-all">
-								<div class="topics-all__number"> 10 </div>
-								<div class="topics-all__topics"> Тем всего </div>
-							</div>
-							<div class="topics-done">
-								<div class="topics-done__number"> 6 </div>
-								<div class="topics-done__topics"> Тем выполнено </div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="main-wrapper__content-photo">
-					<img alt class="main-karpachoff" src="./img/karpachoff.png">
-				</div>
-			</div>
-		</section>
-		<div class="content">
-			<div class="contentContainer">
-				<div class="content-header">
-					<a href="#main" class="content-header__link">Главная</a>
-					<svg width="22" height="1" viewBox="0 0 22 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<line y1="0.499756" x2="22" y2="0.499756" stroke="#979FAD"/>
-						</svg>
-					<a href="#courses" class="content-header__link">Курсы</a>
-					<svg width="22" height="1" viewBox="0 0 22 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<line y1="0.499756" x2="22" y2="0.499756" stroke="#979FAD"/>
-						</svg>
-					<a href="#coursesContent" class="content-header__linkBlack">Состав курса</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+@font-face { 
+    font-family: "GoogleSansBold";
+    src: url("../fonts/GoogleSansBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}   
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url("../fonts/proxima_nova_bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Intro Regular";
+    src: url("../fonts/intro_regular.woff") format("woff");
+    
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Proxima Nova Semibold";
+    src: url("../fonts/proxima_nova_semibold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("../fonts/proxima_nova_regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Proxima Nova Extrabold";
+    src: url("../fonts/proxima_nova_extrabold.woff") format("woff");
+    font-style: normal;
+    font-weight: 800;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.header {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+}
+.header__wrapper {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    
+    width: 100%;
+    margin: auto;
+    max-width: 1127px;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    margin-left: 7px;
+}
+.logo img {
+    width: 184px;
+}
+.menu {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.menu__wrapper-link {
+    margin: 0 20px;
+    cursor: pointer;
+    padding: 26px 0;
+    border-bottom: 2px solid transparent;
+}
+.menu__wrapper-link:hover {
+    border-bottom: 2px solid #FF8A00;
+}
+.auth {
+    display: flex;
+    cursor: pointer;
+    margin-left: 50px;
+    border-bottom: 2px solid transparent;
+}
+.auth:hover {
+    border-bottom: 2px solid #FF8A00;
+}
+.auth__log-in {
+    padding: 26px 0;
+}
+.auth__log-in-link {
+    margin: 0 0 0 12px;
+    
+}
+.auth__icon {
+    display: flex;
+    font-size:15px;
+    padding: 26px 0;
+    align-self: center;
+    font-family: "Proxima Nova Bold";
+}
+.auth-test {
+
+}
+a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Proxima Nova Bold";
+}
+.main {
+    
+    background-image: url(../img/background.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.main-wrapper {
+    display: flex;
+    padding: 32px 75px 0 0;
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.main-wrapper__content {
+    padding-bottom: 56px;
+}
+.main-wrapper__content-title {
+    font-family: "Intro Regular";
+    color: #fff;
+    font-size: 37px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    line-height: 53px;
+    margin: 10px 0;
+}
+.main-wrapper__content-text {
+    font-family: "Intro Regular";
+    font-weight: 400;
+    font-size: 24px;
+    color: #FF8A00;
+    padding-bottom: 33px;
+}
+.button__main-wrapper__content {
+    font-family: "Proxima Nova Bold";
+    color: #fff;
+    border: solid 2px #fff;
+    border-radius: 3px;
+    padding: 12px 39px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 71px;
+    width: 210px;
+    font-size: 14px;
+    background: transparent;
+}
+.button__main-wrapper__content:hover {
+    background: rgb(255, 255, 255, 0.5);
+}
+.progress__bigRectangle {
+    display: flex;
+    width: 67.3%;
+    border: solid 3px #fff;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+.progress__smallRectangle {
+    color: #fff;
+    height: 11px;
+    width: 56%;
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: #296DCE;
+}
+.topics {
+    display: flex;
+}
+.topics-all {
+    display: flex;
+    align-items: center;
+    width: 34.3%;
+}
+.topics-all__number {
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 37px;
+    color: #fff;
+}
+.topics-all__topics {
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 0 9px;
+    flex-wrap: wrap;
+    max-width: 37px;
+}
+.topics-done {
+    display: flex;
+    align-items: center;
+    width: 34%;
+}
+.topics-done__number {
+    font-family: "Proxima Nova Bold";
+    color: #fff;
+    font-weight: 700;
+    font-size: 37px;
+}
+.topics-done__topics {
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 0 11px;
+    flex-wrap: wrap;
+    max-width: 37px;
+}
+.main-wrapper__content-photo {
+    display: flex;
+
+}
+.main-karpachoff {
+    display: block;
+}
+.contentContainer {
+    display: flex;
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 312px;
+    margin: 14px 0 16px;
+}
+.content-header__link {
+    font-family: "Proxima Nova Bold";
+    color: #979FAD;
+    font-weight: 700;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 380px) {
+    .main-wrapper__content-photo {
+        display: none;
+    }
+    .main-karpachoff {
+        display: none;
+    }
+}
