@@ -52,7 +52,6 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    
     width: 100%;
     margin: auto;
     max-width: 1127px;
@@ -66,10 +65,8 @@
     width: 184px;
 }
 .menu {
-    
     display: flex;
     justify-content: space-between;
-    
 }
 .menu__wrapper {
     display: flex;
@@ -100,7 +97,6 @@
 }
 .auth__log-in-link {
     margin: 0 0 0 12px;
-    
 }
 .auth__icon {
     display: flex;
@@ -109,21 +105,16 @@
     align-self: center;
     font-family: "Proxima Nova Bold";
 }
-.auth-test {
-
-}
 a {
     text-decoration: none;
     color: #000000;
     font-family: "Proxima Nova Bold";
 }
 .main {
-    
     background-image: url(../img/background.png);
     background-repeat:no-repeat;
     background-size: cover;
     width: 100%;
-    
 }
 .main-wrapper {
     display: flex;
@@ -230,7 +221,6 @@ a {
 }
 .main-wrapper__content-photo {
     display: flex;
-
 }
 .main-karpachoff {
     display: block;
@@ -245,63 +235,150 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 312px;
-    margin: 14px 0 16px;
+    margin: 15px 0 16px;
 }
 .content-header__link {
     font-family: "Proxima Nova Bold";
     color: #979FAD;
     font-weight: 700;
-    
+}
+.details {
+    background-color: #FAFAFA;
+    padding: 27px 0;
+}
+.details-content {
+    display: flex;
+    max-width: 1111px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.details-content-themes {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.details-content-themes a {
+    margin-left: 12px;
+}
+.button-age {
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    color: #FF8A00;
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    padding: 12px 14px;
+    font-size: 14px;
+    border: solid 2px #FF8A00;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-age i {
+    color: #FF8A00;
+    margin-left: 30px;
+}
+.button-age:hover {
+    background-color: #fafafa07;
 }
 
+.themes {
+    background-color: #ffffff;
+}
+.themes-content {
+    display: flex;
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.themes-wrapper {
+    display: flex;
+    margin-top: 25px;
+    padding: 28px 0;
+    border: 1px #F3F3F3;
+    border-radius: 3px;
+    box-shadow: 4px 4px 15px #00000008;
+}
+.themes-number {
+    display: flex;
+    justify-content: center;
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 64px;
+    color: #E1E1E1;
+    padding: 0 40px 0 42px;
+    line-height: 56px;
+    text-align: center;
+}
+.themes-title {
+    font-family: "Proxima Nova Extrabold";
+    font-weight: 800;
+    font-size: 24px;
+    color: #1092CB;
+    letter-spacing: 0.5px;
+}
+.themes-age {
+    padding: 8px 2px;
+}
+.themes-age img {
+    margin-right: 3px;
+}
+.themes-text {
+    font-family: "Proxima Nova Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #696969;
+    margin: 3px 0;
+}
+.themes-progress-number {
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 81px;
+    line-height: 27px;
+}
+.themes-progress-container {
+    padding: 0px 20px 0;
+    margin: -2px 22px 0 68px;
+}
+.themes-date {
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 16px;
+    color: #696969;
+    padding-left: 2px;
+    line-height: 34px;
+}
+.themes-date span {
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 16px;
+    color: #FF8A00;
+    text-decoration-line: underline;
+    margin-left: 4px;
+}
+.progress-big {
+    display: flex;
+    width: 15px;
+    height: 121px;
+    border: solid 1px #E6E6E6;
+    background-color: #F3F3F3;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: flex-end;
+}
+.progress-small {
+    height: 87px;
+    width: 9px;
+    border: solid 1px #0099DD;
+    border-radius: 1px;
+    background-color: #0099DD;
+    margin-bottom: 2px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 380px) {
+@media screen and (max-width: 380px) {
     .main-wrapper__content-photo {
-        display: none;
-    }
-    .main-karpachoff {
         display: none;
     }
 }
