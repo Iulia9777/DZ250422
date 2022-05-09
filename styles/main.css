@@ -102,7 +102,7 @@
     display: flex;
     font-size:15px;
     padding: 26px 0;
-    align-self: center;
+    align-items: center;
     font-family: "Proxima Nova Bold";
 }
 a {
@@ -118,6 +118,7 @@ a {
 }
 .main-wrapper {
     display: flex;
+    flex-wrap: wrap;
     padding: 32px 75px 0 0;
     margin: 0 auto;
     max-width: 1110px;
@@ -295,7 +296,7 @@ a {
     display: flex;
     margin-top: 25px;
     padding: 28px 0;
-    border: 1px #F3F3F3;
+    border: solid 1px #F3F3F3;
     border-radius: 3px;
     box-shadow: 4px 4px 15px #00000008;
 }
@@ -375,6 +376,39 @@ a {
     border-radius: 1px;
     background-color: #0099DD;
     margin-bottom: 2px;
+}
+.footer {
+    background-color: #0099DD;
+    margin-top: 76px;
+}
+.footer-wrapper {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1110px;
+    justify-content: space-between;
+    padding: 36px 0;
+    color: #FFFFFF;
+}
+.footer-links-title {
+    font-family: "Proxima Nova Bold";
+    font-weight: 700;
+    font-size: 24px;
+}
+.footer-menu svg {
+    margin: 12px 0 20px 0;
+}
+.footer-link {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 0;
+}
+.footer-rectangle {
+    background-color: #222B3A;
+    height: 47px;
 }
 
 @media screen and (max-width: 380px) {
