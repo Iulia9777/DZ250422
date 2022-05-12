@@ -282,7 +282,9 @@ a {
 .button-age:hover {
     background-color: #fafafa07;
 }
-
+.themes-container {
+    padding-top: 7px;
+}
 .themes {
     background-color: #ffffff;
 }
@@ -293,8 +295,8 @@ a {
 }
 .themes-wrapper {
     display: flex;
-    margin-top: 25px;
-    padding: 28px 0;
+    margin-top: 20px;
+    padding: 22.5px 0;
     border: solid 1px #F3F3F3;
     border-radius: 3px;
     box-shadow: 4px 4px 15px #00000008;
@@ -307,8 +309,9 @@ a {
     font-size: 64px;
     color: #E1E1E1;
     padding: 0 40px 0 42px;
-    line-height: 56px;
+    line-height: 64px;
     text-align: center;
+    width: 148px;
 }
 .themes-title {
     font-family: "Proxima Nova Extrabold";
@@ -316,9 +319,10 @@ a {
     font-size: 24px;
     color: #1092CB;
     letter-spacing: 0.5px;
+    line-height: 34px;
 }
 .themes-age {
-    padding: 8px 2px;
+    padding: 4px 2px;
 }
 .themes-age img {
     margin-right: 3px;
@@ -329,14 +333,14 @@ a {
     font-size: 16px;
     line-height: 27px;
     color: #696969;
-    margin: 3px 0;
+    margin: 7px 0;
 }
 .themes-progress-number {
     font-family: "Proxima Nova Bold";
     font-weight: 700;
     font-size: 14px;
-    margin-left: 81px;
-    line-height: 27px;
+    margin-left: 83px;
+    line-height: 31px;
 }
 .themes-progress-container {
     padding: 0px 20px 0;
@@ -348,7 +352,7 @@ a {
     font-size: 16px;
     color: #696969;
     padding-left: 2px;
-    line-height: 34px;
+    line-height: 27px;
 }
 .themes-date span {
     font-family: "Proxima Nova Bold";
@@ -413,5 +417,60 @@ a {
 @media screen and (max-width: 380px) {
     .main-wrapper__content-photo {
         display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .logo {
+        padding: 15px 18px;
+        margin-left: 0px;
+    }
+    .main-wrapper {
+        padding: 61px 20px 0;
+    }
+    .main-wrapper__content {
+        padding-bottom: 71px;
+    }
+    .main-wrapper__content-title {
+        font-size: 31px;
+    }
+    .main-wrapper__content-text {
+        font-size: 22px;
+    }
+    .progress__bigRectangle {
+        width: 99.3%;
+    }
+    .progress__smallRectangle {
+        width: 60%;
+    }
+    .topics-done {
+        padding-left: 76px;
+    }
+    .content {
+        display: none;
+    }
+    .details {
+        padding: 24px 18px;
+    }
+    .details-content {
+        display: block;
+    }
+    .details-content-themes {
+        padding-bottom: 30px;
+    }
+    .button-age {
+        justify-content: space-between;
+    }
+
+}
+@media screen and (max-width: 760px) {
+    .main-wrapper__content-photo {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    .themes-wrapper {
+        display: grid;
+        
     }
 }
